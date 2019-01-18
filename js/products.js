@@ -25,8 +25,8 @@ $.getJSON("products.json", function (json) {
                   '<div id="product-modal" class="modal">' +
                     '<div class="modal-content">' + 
                       '<div class="modal-body">' + 
-                      '<img src="images/marker.png" alt="check-mark">' +
-                      '<p> Tu producto fue agregado al carrito con exito </p>' +
+                        '<img src="images/correct.png" alt="check-mark">' +
+                        '<p> Tu producto fue agregado al carrito con exito </p>' +
                       '</div>' +
                       '<div class="modal-footer">' +
                         '<button class=""> Ir al carrito </button>' +

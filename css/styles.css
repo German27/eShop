@@ -83,68 +83,6 @@ body{
   display: block;
 }
 
-@media only screen and (max-width: 1024px) {
-  .dropdown{
-  position: relative;
-  display: inline-block;
-  width: 11%;
-  font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .main-nav{
-    display: none;
-  }
-  
-  .nav-medium{
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #f73859;
-  }
-  
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f73859;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    display: none;
-    z-index: 1000;
-  }
-
-  .sidebar a {
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 0.5px solid #fff;
-  }
-
-  .btn-nav {
-  display: inline-block;
-  cursor: pointer;
-  }
-
-  .bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 6px 10px;
-    display: block;
-  }
-
-  #btn-close{
-    width: 50px;
-    height: 36px;
-    display: none;
-  }  
-  
-}
-
 /* HEADER & NAV */
 
 /* MAIN MENU*/
@@ -265,7 +203,7 @@ footer{
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 60%;
+  width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -292,11 +230,9 @@ footer{
 }
 
 .modal-body img{
-  width: 30px;
-  height: 30px;
-  top: 15px;
-  left: 320px;
-  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin-top: 8px;
 }
 
 .modal-footer {
@@ -313,3 +249,85 @@ footer{
   padding: 1em;
   margin: 0.5em 1em; 
 }
+
+/* MODAL */
+
+@media only screen and (max-width: 1024px) {
+  .dropdown{
+  position: relative;
+  display: inline-block;
+  width: 11%;
+  font-size: 15px;
+  }
+
+  .modal-content{
+    width: 50%;
+  }
+
+  .modal-body p{
+    margin: 0.5em; 
+  }
+
+  .modal-body img{
+  width: 48px;
+  height: 48px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav{
+    display: none;
+  }
+  
+  .nav-medium{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f73859;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f73859;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    z-index: 1000;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 0.5px solid #fff;
+  }
+
+  .btn-nav {
+  display: inline-block;
+  cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 10px;
+    display: block;
+  }
+
+  #btn-close{
+    width: 50px;
+    height: 36px;
+    display: none;
+  }  
+
+  .modal-content{
+    width: 80%;
+  }
+  
+}
+

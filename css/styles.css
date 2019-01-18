@@ -46,6 +46,7 @@ body{
   position: relative;
   display: inline-block;
   width: 10%;
+  z-index: 1000;
 }
 
 .dropdown li{
@@ -112,6 +113,7 @@ body{
     height: 100%;
     overflow: auto;
     display: none;
+    z-index: 1000;
   }
 
   .sidebar a {
@@ -140,7 +142,7 @@ body{
     height: 36px;
     display: none;
   }  
-
+  
 }
 
 /* HEADER & NAV */
@@ -160,9 +162,11 @@ body{
 }
 
 .flex-container .jr-flex {
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
+  height: 450px;
   width: 300px;
   margin: 10px;
+  position: relative;
   text-align: center;
 }
 
@@ -180,12 +184,12 @@ body{
 .product-description{
   font-size: 12px;
   padding: 0px 10px;
+  text-align: left;
 }
 
 .product-price{
   font-size: 20px;
-  padding: 10px;
-  margin: 0px 10px;
+  color: rgb(255, 219, 17);
 }
 
 .product-price span{
@@ -195,8 +199,10 @@ body{
 }
 .product-info{
   text-decoration: none;
-  position: relative;
   color: #0000cc;
+  position: absolute;
+  bottom: 27px;
+  right: 20px;
 }
 
 .product-info:hover{
@@ -206,11 +212,12 @@ body{
 .btn-product{
   color: #fff;
   background-color: #05004e;
-  margin: 20px;
-  padding: 1em;
   border: 1px solid black;
   border-radius: 5%;
-  position: relative;
+  padding: 1em;
+  bottom: 15px;
+  left: 20px;
+  position: absolute;
 }
 
 /* MAIN MENU*/
@@ -234,3 +241,75 @@ footer{
 
 
 /* FOOTER */
+
+/* MODAL */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 1100000;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #283149;  
+  color: #fff;
+}
+
+.modal-body img{
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 320px;
+  position: absolute;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #fff;
+  color: #fff;
+}
+
+.modal-footer button{
+  color: #fff;
+  background-color: #283149;
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 1em;
+  margin: 0.5em 1em; 
+}

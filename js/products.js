@@ -3,12 +3,15 @@ $('#btn-nav').click(function () {
     $('#btn-nav').addClass("active")
     $('#btn-nav').hide()
     $('#btn-close').show()
+    $('body').addClass("lock-scroll");
 });
 
 $('#btn-close').click(function () {
   $('#sidebar').hide()
   $('#btn-nav').show()
   $('#btn-close').hide()
+  $('#btn-nav').removeClass("active")
+  $('body').removeClass("lock-scroll");
 });
 
 $.getJSON("products.json", function (json) {

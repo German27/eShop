@@ -301,6 +301,10 @@ footer{
   .holder{
     width: 85%;
   }
+
+  .modal-content{
+    margin-top: 50px;
+  }
   
 }  
 
@@ -363,6 +367,7 @@ footer{
 
   .modal-content{
     width: 80%;
+    margin-top: 50px;
   }
 
   .product-title{

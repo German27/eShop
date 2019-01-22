@@ -8,11 +8,11 @@ $('#btn-nav').click(function () {
 });
 
 $('#btn-close').click(function () {
-  $('#sidebar').hide()
-  $('#btn-nav').show()
-  $('#btn-close').hide()
-  $('#overlay').removeClass("bg-dark-active")
-  $('.jr-flex').removeClass("z-i")
+  $('#sidebar').hide();
+  $('#btn-nav').show();
+  $('#btn-close').hide();
+  $('#overlay').removeClass("bg-dark-active");
+  $('.jr-flex').removeClass("z-i");
   $('body').removeClass("lock-scroll");
 });
 
@@ -39,7 +39,7 @@ $.getJSON("products.json", function (json) {
                       '</div>' +
                     '</div>'
                   '</div>' +
-                '</div>'
+                '</div>';
 
     $('.flex-container').append(html);
     
@@ -48,13 +48,13 @@ $.getJSON("products.json", function (json) {
 });
 
 $(document).on('click', '.btn-product', function () {
-  $('#product-modal').show()
+  $('#product-modal').show();
   $('body').addClass("lock-scroll");
   $('#btn-nav').addClass("p-ev");
 });
 
 $(document).on('click', '.close-modal', function () {
-  $('#product-modal').hide()
+  $('#product-modal').hide();
   $('body').removeClass("lock-scroll");
   $('#btn-nav').removeClass("p-ev");
 });

@@ -1,16 +1,18 @@
 $('#btn-nav').click(function () {
-    $('#sidebar').show()
-    $('#btn-nav').addClass("active")
-    $('#btn-nav').hide()
-    $('#btn-close').show()
-    $('body').addClass("lock-scroll");
+  $('#sidebar').show()
+  $('#btn-nav').hide()
+  $('#btn-close').show()
+  $('body').addClass("lock-scroll");
+  $('#overlay').addClass("bg-dark-active")
+  $('.jr-flex').addClass("z-i")
 });
 
 $('#btn-close').click(function () {
   $('#sidebar').hide()
   $('#btn-nav').show()
   $('#btn-close').hide()
-  $('#btn-nav').removeClass("active")
+  $('#overlay').removeClass("bg-dark-active")
+  $('.jr-flex').removeClass("z-i")
   $('body').removeClass("lock-scroll");
 });
 
@@ -47,8 +49,11 @@ $.getJSON("products.json", function (json) {
 
 $(document).on('click', '.btn-product', function () {
   $('#product-modal').show()
+  $('body').addClass("lock-scroll");
 });
 
 $(document).on('click', '.close-modal', function () {
   $('#product-modal').hide()
+  $('body').removeClass("lock-scroll");
+  $('#btn-nav').bind("click");
 });

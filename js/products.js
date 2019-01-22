@@ -55,5 +55,4 @@ $(document).on('click', '.btn-product', function () {
 $(document).on('click', '.close-modal', function () {
   $('#product-modal').hide()
   $('body').removeClass("lock-scroll");
-  $('#btn-nav').bind("click");
 });

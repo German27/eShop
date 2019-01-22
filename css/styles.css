@@ -246,12 +246,16 @@ footer{
   margin: 0.5em 1em; 
 }
 /* z-index */
+
 .z-i{
   z-index: -1;
 }
+
 /* z-index */
 
 /* MODAL */
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 1024px) {
   .dropdown{
@@ -353,4 +357,7 @@ footer{
   }
 
 }
+
+/* MEDIA QUERIES */
+
 

@@ -38,7 +38,7 @@ body{
   padding: 5px;
 }
 
-.nav-medium{
+.nav-m{
   display:none;
 }
 
@@ -253,11 +253,19 @@ footer{
 
 /* z-index */
 
+/* pointer-events */
+
+.p-ev{
+  pointer-events: none;
+}
+
+/* pointer-events */
+
 /* MODAL */
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .dropdown{
   position: relative;
   display: inline-block;
@@ -278,7 +286,23 @@ footer{
   width: 48px;
   height: 48px;
   }
+
+  .holder{
+    width: 80%!important;
+  }
+
+  .flex-container .jr-flex {
+    margin-right: 50px;
+  }
+  
 }
+
+@media only screen and (min-width: 768px) {
+  .holder{
+    width: 85%;
+  }
+  
+}  
 
 @media only screen and (max-width: 768px) {
   .main-header{
@@ -292,10 +316,9 @@ footer{
     display: none;
   }
   
-  .nav-medium{
+  .nav-m{
     display: block;
     width: 100%;
-    margin-bottom: 20px;
     background-color: #f73859;
   }
   

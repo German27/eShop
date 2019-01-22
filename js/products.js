@@ -42,7 +42,7 @@ $.getJSON("products.json", function (json) {
                 '</div>'
 
     $('.flex-container').append(html);
-
+    
   }
 
 });
@@ -50,9 +50,12 @@ $.getJSON("products.json", function (json) {
 $(document).on('click', '.btn-product', function () {
   $('#product-modal').show()
   $('body').addClass("lock-scroll");
+  $('#btn-nav').addClass("p-ev");
 });
 
 $(document).on('click', '.close-modal', function () {
   $('#product-modal').hide()
   $('body').removeClass("lock-scroll");
+  $('#btn-nav').removeClass("p-ev");
 });
+

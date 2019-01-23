@@ -55,7 +55,6 @@ body{
   text-align: center;
   color: #fff;
   width: 100%;
-  font-size: 16px;
 }
 
 .dropdown li:hover{
@@ -270,11 +269,6 @@ footer{
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 1024px) {
-  .dropdown{
-  position: relative;
-  display: inline-block;
-  }
-
   .dropdown li{
   font-size: 13px;
   }
@@ -308,12 +302,12 @@ footer{
     width: 85%;
   }
 
-  .modal-content{
-    margin-top: 50px;
-  }
-  
   .sidebar {
     width: 250px!important;
+  }
+
+  .dropdown li{
+  font-size: 13px;
   }
 }  
 
@@ -404,3 +398,9 @@ footer{
 /* MEDIA QUERIES */
 
 
+@media only screen and (min-width: 1440px) {
+  .dropdown li{
+    font-size: 16px;
+  }
+
+}

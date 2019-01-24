@@ -248,6 +248,9 @@ footer{
   padding: 1em;
   margin: 0.5em 1em; 
 }
+
+/* MODAL */
+
 /* z-index */
 
 .z-i{
@@ -263,8 +266,6 @@ footer{
 }
 
 /* pointer-events */
-
-/* MODAL */
 
 /* MEDIA QUERIES */
 
@@ -391,6 +392,17 @@ footer{
   .bg-dark-active{
   position: absolute;
   background-color: rgba(0,0,0,0.4);
+  }
+
+  #btn-top {
+  display: none;
+  position: fixed; 
+  bottom: 35px;
+  right: 6px;
+  border: none;
+  background-color: #ff6f0f;
+  padding: 10px; 
+  border-radius: 50%; 
   }
 
 }

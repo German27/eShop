@@ -59,3 +59,19 @@ $(document).on('click', '.close-modal', function () {
   $('#btn-nav').removeClass("p-ev");
 });
 
+window.onscroll = function () {
+  let userScroll = document.body.scrollTop > 600 || document.documentElement.scrollTop > 600;
+    if (userScroll) {
+    $('#btn-top').show();
+  } else {
+    $('#btn-top').hide();
+  }
+};
+
+$('#btn-top').click(function () {
+  $(window).scrollTop(0);
+});
+
+if ($('#sidebar').is(':visible')) {
+  $('#btn-top').hide();
+};
